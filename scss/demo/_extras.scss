@@ -1,0 +1,225 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.leaves {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+.decoration {
+	position: absolute;
+	z-index: -1;
+
+	&.right {
+		right: 0;
+		top: -35rem;
+	}
+
+	&.left {
+		left: 0;
+		top: 11rem;
+	}
+
+	&.about-left {
+		left: 0;
+		top: -65rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.carousel-indicator {
+	margin-top: 4rem;
+
+	li {
+		list-style: none;
+		padding: 0rem;
+
+		i {
+			font-size: 0.5rem;
+			color: #d6d7d8;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 2rem;
+	}
+}
+
+.sale-banner {
+	padding: 1rem;
+
+	img {
+		width: 5rem;
+		height: 4.5rem;
+	}
+	
+	h4 {
+		font-size: 1.125rem;
+	}
+
+	p {
+		color: #4f4f4f;
+		line-height: 1.2rem;
+		font-weight: 0.875rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+.page-links {
+	display: inline-block;
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: #fff;
+	text-transform: uppercase;
+    padding: 1rem 6rem;
+    background-color: $theme-color;
+    border-radius: 2rem;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+}
+
+.see-all-link {
+	font-family: $body-font;
+    font-size: 1.125rem;
+    font-weight: 500;
+	overflow: hidden;
+    text-align: center;
+	text-transform: uppercase;
+	color: $white;
+    text-decoration: none;
+    letter-spacing: .05rem;
+
+	&:before, &:after {
+		background-color: $white;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 15rem;
+	}
+
+	&:before {
+		right: 2em;
+		margin-left: -50%;
+	}
+
+	&:after {
+		left: 2em;
+		margin-right: -50%;
+	}
+
+	&:hover {
+		color: $theme-color;
+	}
+}
+
+#sign-up {
+	h2 {
+		font-size: 7.5rem;
+		letter-spacing: 0.5rem;
+	}
+
+	h4 {
+		letter-spacing: 0.1rem;
+
+		&:before {
+			position: relative;
+			display: inline-block;
+			content: "";
+			width: 17rem;
+			height: 1px;
+			background-color: #828282;
+			margin-right: 1rem;
+			vertical-align: middle;
+		}
+	}
+}
+
+.review {
+	position: relative;
+
+	.review-title {
+		font-family: $heading-font;
+		font-size: 2.1875rem;
+		color: $white;
+	}
+
+	.review-info {
+		font-family: $body-font;
+		font-size: 0.75rem;
+		font-weight: 300;
+		color: $white;
+	}
+}
+
+.quote {
+	position: absolute;
+	top: 9rem;
+	right: 17rem;
+	z-index: -1;
+}
+
+.indicator {
+	a {
+		font-size: 0.65rem;
+	}
+
+	.control {
+		font-size: 2.5rem;
+	}
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	 font-size: 3rem;
+	 opacity: 1;
+	 color:#dcdcdc;
+
+	 @include media-breakpoint-down(lg) {
+		display: none;
+	}
+ }
+
+ .slick-prev {
+	 left:-10rem;
+
+	 @include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+ }
+
+ .slick-next {
+    right: -7rem;
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+ .slick-slide {
+    margin: 0 1rem;
+}

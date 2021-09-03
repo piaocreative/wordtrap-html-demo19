@@ -1,0 +1,262 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	p {
+		font-family: $body-font;
+		font-weight: 200;
+		line-height: 1.3rem!important;
+		color: #3a3a3a;
+		font-size: 0.75rem;
+	}
+
+	a {
+		font-family: $body-font;
+		font-weight: 400;
+	}
+
+	.widget-title {
+		color: #7d7d7d;		
+		font-size: 0.875rem;
+		margin-bottom: .5rem;
+		font-family: $body-font;
+		font-weight: 500;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.widget-content {
+			p {
+				color: $white;
+				font-size: 1.125rem;
+				display: block;
+				font-family: $heading-font;
+			}
+
+			.social-icons {
+				padding: 0;
+				list-style: none;
+	
+				li {
+					&:last-child {
+						padding-right: 0;
+					}
+			
+					a {
+						display: inline-block;
+						text-align: center;
+						color: $white;		
+						line-height: 1.8125rem;	
+						vertical-align: middle;
+						font-size: 1.25rem;
+	
+						@include transition(all 0.3s ease-in-out);
+			
+						&:hover {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+
+				a {
+					color:white;
+					font-weight: 300;
+					text-decoration: none;
+					font-size: 0.75rem;
+					font-family: $body-font;
+					text-transform: uppercase;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&.widget-links {
+			.widget-content {
+				justify-content: space-between;
+			}
+
+			ul {
+				width: auto;
+				margin: auto;
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		p {
+			color: $white;
+			font-size: 1.125rem;
+			display: block;
+			font-family: $heading-font;
+		}
+
+		.payments {
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem !important;
+
+				img {
+					width: 3rem !important;
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			a {
+				font-family: $body-font;
+				font-size: 0.75rem;
+				font-weight: 300;
+				display: block;
+				line-height: 1.5;
+				margin-bottom: 1rem;
+				text-decoration: none;
+				color: $white;
+
+				&.phone {
+					font-size: 1rem;
+					font-weight: 500;
+				}
+
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+	}
+
+	// Widget - feedback
+	&.widget-feedback {
+		.widget-content {
+			p {
+				letter-spacing: 0.1rem
+			}
+
+			#widget-feedback-form {
+				input {
+					background-color: #f9f9f9;
+					color:#d0d0d0;
+				}
+				
+				.input-group-append {
+					margin-left: -2.875rem;
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			p {
+				font-size:0.875rem;
+			}
+
+			#widget-subscribe-form {
+				.input-group-append {
+					margin-left: -3rem;
+				}
+
+				.input-group {
+					input {
+						font-size: 0.875rem;
+					}
+
+					button {
+						border-radius: 2rem;
+						padding: 1.2rem 3rem;
+						letter-spacing: 0.1rem;
+						font-size: 0.875rem;
+						color: $white;
+
+						i {
+							font-size: 0.9rem;
+							margin-left: 0.5rem;
+						}
+					}
+
+					::placeholder {
+						color: $white;
+					}
+				}
+			}
+
+			::placeholder {
+				color: #6a6a6a;
+				opacity: 1;
+			}
+		}
+	}
+
+	// Widget - Products
+	&.widget-products {
+		.widget-content {
+			.product {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0.625rem;
+
+				.product-image {
+					flex: 1;
+					height: 8.25rem;
+					max-width: 9.75rem;
+				}
+
+				.product-details {
+					flex: 1;
+					padding: 0 1.25rem;					
+				}
+
+				.product-price {					
+					margin-bottom: 0.625rem;
+				}
+
+				.product-title {
+					a {
+						color: $white;																		
+					}					
+				}
+			}
+		}
+	}
+}

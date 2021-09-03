@@ -1,0 +1,83 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact {
+	input,textarea {
+		border-color: #d6d7d8;
+	}
+
+	label {
+		color: #a2a2a2;
+		font-size: 0.875rem;
+		font-family: $body-font;
+		display: block;
+		padding: 1.5rem 2.5rem;
+	}
+
+	input,textarea {
+		padding: 1.5rem 2.5rem;
+	}
+
+	::placeholder {
+		color: $white;
+	}
+
+	button {
+		font-size: 1.25rem;
+		padding: 1.5rem 5rem;
+		font-family: $body-font;
+		letter-spacing: 0.05rem;
+	}
+
+	p {
+		font-size: 0.875rem;
+		line-height: 1.3rem;
+		color: #9f9f9f;
+	}
+}
+
+.contact-decoration {
+	position: absolute;
+	right: 0;
+	top: 4rem;
+	z-index: 1;
+
+	img {
+		width: 24rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		top: 18rem;
+
+		img {
+			width: 16rem;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		top: 30rem;
+
+		img {
+			width: 21rem;
+		}
+	}
+}
+
+.contact-light {
+	position: absolute;
+	left: 0;
+	top: 16rem;
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+
+.contact-leaves {
+	position: absolute;
+	top: 10rem;
+	left: 28%;
+	z-index: -1;
+}

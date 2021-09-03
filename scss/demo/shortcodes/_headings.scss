@@ -1,0 +1,36 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	margin-bottom: 3.25rem; 
+	position: relative;
+
+	.title {
+		font-family: $heading-font;
+		color: $white;
+		font-weight: 400;
+		letter-spacing: 0.35rem;
+	}
+
+	.sub-title {
+		font-size: 1.325rem;
+	}
+
+	p {
+		font-size: 1.0625rem;
+		color: $secondary;
+		line-height: 2rem;
+	}
+}
