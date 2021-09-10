@@ -8,28 +8,6 @@
 /* ----------------------------------------------------------------
 	Form Styles
 -----------------------------------------------------------------*/
-#sign-up {
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-
-    .sign-up-form {
-        width: 70%;
-        float: right;
-    
-        .input-group-append {
-            margin-left: -2rem;
-        }
-    
-        button {
-            letter-spacing: 0.1rem;
-        }
-
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
-}
-
 #subscribe-form {
     .input-group-append {
         margin-left: -2rem;
@@ -39,5 +17,6 @@
         letter-spacing: 0.1rem;
         padding-left: 5.5rem;
         padding-right: 5.5rem;
+        background-image: linear-gradient(360deg, #730213, transparent);
     }
 }

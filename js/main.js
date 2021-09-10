@@ -4,7 +4,7 @@ $( document ).ready( function() {
         dots: false,
         arrows: true,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
           {
@@ -18,7 +18,7 @@ $( document ).ready( function() {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           },
@@ -67,11 +67,12 @@ $( document ).ready( function() {
 } );
 
 
-$(".testimonial-slick").slick({
+$(".reviews").slick({
     centerMode: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    dots:true,
     lazyLoad: "ondemand",
     responsive: [
       {

@@ -22,6 +22,7 @@
 	position: relative;
 	background-color: #1b1b1b;
 	border-radius: 0.5rem;
+	padding: 0 2rem;
 
 	.product-image {
 		position: relative;
@@ -133,6 +134,7 @@
 		background-color: $theme-color;
 		text-decoration: none;
 		letter-spacing: 0.1rem;
+		background-image: linear-gradient(360deg, #730213, transparent);
 	}
 
 	.add-to-wishlist {
