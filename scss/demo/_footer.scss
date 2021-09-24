@@ -35,6 +35,12 @@
 			width: 9rem;
 		}
 	}
+
+	@include media-breakpoint-down(xl) {
+		div {
+			border: none !important;
+		}
+	}
 }
 
 #footer-bottom {

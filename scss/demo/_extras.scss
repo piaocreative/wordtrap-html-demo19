@@ -26,6 +26,10 @@
 	position: absolute;
 	z-index: -1;
 
+	img {
+		max-width: 100%;
+	}
+
 	&.right {
 		right: 0;
 		top: -35rem;
@@ -144,7 +148,6 @@
 
     .sign-up-form {
         width: 65%;
-        float: right;
     
         .input-group-append {
             margin-left: -2rem;
@@ -255,9 +258,24 @@
 	z-index: -1;
 }
 
-.indicator {
+.pagenation {
+	position: absolute;
+    left: 44vw;
+    bottom: 7rem;
+
 	a {
 		font-size: 0.65rem;
+		text-decoration: none;
+	}
+
+	.indicator {
+		a {
+			color: rgba($theme-color, 0.5);
+
+			&.active {
+				color: $theme-color;
+			}
+		}
 	}
 
 	.control {
@@ -277,17 +295,17 @@
  }
 
  .slick-prev {
-	 left:-9rem;
+	 left:-4rem;
 
-	 @include media-breakpoint-down(lg) {
+	 @include media-breakpoint-down(xxl) {
 		display: none !important;
 	}
  }
 
  .slick-next {
-    right: -7rem;
+    right: -3rem;
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xxl) {
 		display: none !important;
 	}
 }

@@ -217,32 +217,39 @@
 
 /* Ads
 -----------------------------------------------------------------*/
-
 .ads {
-    position: relative;
-    display: block;
+	position: relative;
+	display: block;
 
 	.ads-bg {
-		img {
-			border-radius: 1.5rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 
-			@include media-breakpoint-down(lg) {
-				height: 32rem;
-			}
+		.ads-bg-img {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
+	}
 
+	.ads-body {
+		position: relative;
+		z-index: 1;
 	}
 
 	&.ads1 {
-		margin-bottom: 1.875rem;
-
+		padding: 7rem 0;
+		
 		.ads-body {
-			position: absolute;
-			left: 0;
-			top: 0;
-			right: 0;
-			height: 100%;
-
 			h2 {
 				font-size: 10.625rem;
 				line-height: 1;
