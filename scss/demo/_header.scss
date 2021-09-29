@@ -43,8 +43,10 @@
 -----------------------------------------------------------------*/
 
 #header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
+	@include media-breakpoint-down(lg) {
+		padding-left: 2.8125rem;
+		padding-right: 2.8125rem;
+	}
 }
 
 

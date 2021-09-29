@@ -38,6 +38,10 @@
 	&.left {
 		left: 0;
 		top: 11rem;
+		
+		img {
+			max-height: 108rem;
+		}
 	}
 
 	&.about-left {
@@ -68,28 +72,6 @@
 	}
 }
 
-.sale-banner {
-	padding: 1rem;
-
-	img {
-		width: 5rem;
-		height: 4.5rem;
-	}
-	
-	h4 {
-		font-size: 1.125rem;
-	}
-
-	p {
-		color: #4f4f4f;
-		line-height: 1.2rem;
-		font-weight: 0.875rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
-	}
-}
 
 .page-links {
 	display: inline-block;
