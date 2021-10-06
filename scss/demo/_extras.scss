@@ -76,7 +76,6 @@
 .page-links {
 	display: inline-block;
     font-family: $body-font;
-    font-weight: 400;
     font-size: 1.12rem;
     color: #fff;
 	text-transform: uppercase;
@@ -171,7 +170,6 @@
 		position: relative;
 	
 		.review-title {
-			font-family: $heading-font;
 			font-size: 2.1875rem;
 			color: $white;
 		}
