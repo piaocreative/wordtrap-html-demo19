@@ -23,11 +23,8 @@
         height: 100%;
 
         .go-home {
-            padding: 1.3rem 5rem;
-            font-size: 0.875rem;
-            font-family: $body-font;
-            font-weight: 500;
             letter-spacing: 0.07rem;
+            background-image: linear-gradient(360deg, #730213, transparent);
         }
     }
 

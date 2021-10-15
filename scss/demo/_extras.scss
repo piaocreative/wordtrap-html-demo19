@@ -74,15 +74,8 @@
 
 
 .page-links {
-	display: inline-block;
-    font-family: $body-font;
-    font-size: 1.12rem;
     color: #fff;
 	text-transform: uppercase;
-    padding: 1rem 6rem;
-    background-color: $theme-color;
-    border-radius: 2rem;
-	text-decoration: none;
 	letter-spacing: 0.1rem;
 	background-image: linear-gradient(360deg, #730213, transparent);
 }
