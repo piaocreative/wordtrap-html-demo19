@@ -16,9 +16,9 @@
 -----------------------------------------------------------------*/
 
 
-#banner {
+.banner {
     position: relative;
-    height: 50rem;
+    padding: 3.75rem 0;
 
     img {
         width: 100%;
@@ -30,6 +30,11 @@
     .banner-wrap {
         padding-left: 4.375rem;
         padding-right: 4.375rem;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
     }
 }
 
